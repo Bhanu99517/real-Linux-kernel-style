@@ -200,3 +200,20 @@ static void __exit kernel_module_exit(void)
 
 module_init(kernel_module_init);
 module_exit(kernel_module_exit);
+
+
+/* =============================================================================
+   WHAT THIS MATCHES IN REAL LINUX
+   =============================================================================
+*/
+
+Concept         Real Linux Component
+task_struct     Process metadata
+CFS             Completely Fair Scheduler
+sys_*           Syscall handler
+request_irq     Interrupt handler
+kmalloc         Kernel heap allocator
+Spinlocks       SMP-safe locking
+fileoperations  Device driver interface
+/proc           Kernel-user bridge
+module_init     Kernel module entry 
